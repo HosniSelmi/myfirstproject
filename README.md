@@ -30,14 +30,14 @@ The project is deployed at: [https://myfirstproject-sigma-three.vercel.app/](htt
 Since this is a static frontend project, no setup or build step is required:
 
 1. Clone or download the repository
-2. Open **`aze.html`** in any modern browser
+2. Open **`index.html`** in any modern browser
 3. Start typing in the username field and click the down-arrow to proceed
 
 ## Project Structure
 
 ```
 myfirstproject/
-├── aze.html     # Main HTML page (the form)
+├── index.html     # Main HTML page (the form)
 ├── rty.css      # Styles & animations
 ├── dfe.js       # Form logic & validation
 └── README.md    # This file
