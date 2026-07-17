@@ -23,10 +23,12 @@ function animatedform()
          {
             nextslide(parent,nextform);
          }  
-         else
-         {
-             parent.style.animation = "shake 0.5s ease" ;
-         }
+          else
+          {
+              parent.style.animation = "none";
+              void parent.offsetHeight;
+              parent.style.animation = "shake 0.5s ease";
+          }
         
         });
         
@@ -36,8 +38,8 @@ function ValidationEmail(email)
 {
   const val= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (val.test(email.value))
-   { return true;
-     Colorer("rgb(9, 231, 58)"); }
+   { Colorer("rgb(9, 231, 58)");
+     return true; }
   else 
    {
     Colorer("rgb(255,99,71)");
@@ -51,6 +53,7 @@ function ValidationUser(user)
     {
         console.log("not enouth caracters");
         Colorer("rgb(255,99,71)");
+        return false;
     }
     else 
     {
@@ -61,6 +64,7 @@ function ValidationUser(user)
 
 function nextslide(parent,nextform)
 {
+  parent.classList.remove("active");
   parent.classList.add("inactive");
   nextform.classList.remove("inactive");
   nextform.classList.add("active");
