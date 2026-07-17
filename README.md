@@ -21,6 +21,10 @@ A multi-step registration form with smooth animations and client-side validation
 | Vanilla JavaScript | Form logic & validation |
 | Font Awesome 6 | Icons (CDN) |
 
+## Live Demo
+
+The project is deployed at: [https://myfirstproject-sigma-three.vercel.app/](https://myfirstproject-sigma-three.vercel.app/)
+
 ## Getting Started
 
 Since this is a static frontend project, no setup or build step is required:
